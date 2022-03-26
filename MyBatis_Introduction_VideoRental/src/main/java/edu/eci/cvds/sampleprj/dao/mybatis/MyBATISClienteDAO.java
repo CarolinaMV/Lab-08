@@ -7,6 +7,7 @@ import edu.eci.cvds.samples.entities.Cliente;
 import edu.eci.cvds.samples.services.ExcepcionServiciosAlquiler;
 import org.apache.ibatis.exceptions.PersistenceException;
 
+import java.util.Date;
 import java.util.List;
 
 public class MyBATISClienteDAO implements ClienteDAO {
@@ -41,6 +42,24 @@ public class MyBATISClienteDAO implements ClienteDAO {
         }
         catch(Exception e){
             throw new PersistenceException(ExcepcionServiciosAlquiler.ERROR_CONSULTAR_CLIENTES);
+        }
+    }
+
+    @Override
+    public void saveItemRentado(int id, int idi, Date fechaInicio, Date fechaFin) throws PersistenceException{
+        try {
+            ClienteMapper.agregarItemRentadoACliente(id, idi, fechaInicio, fechaFin);
+        }catch (Exception e){
+            throw new PersistenceException(ExcepcionServiciosAlquiler.ERROR_REGISTRAR_ITEMRENTADO);
+        }
+    }
+
+    @Override
+    public void vetarCliente(long doc, boolean estado) throws edu.eci.cvds.sampleprj.dao.PersistenceException {
+        try {
+            ClienteMapper.vetarCliente(doc, estado);
+        }catch (PersistenceException e){
+            throw new ExcepcionServiciosAlquiler(ExcepcionServiciosAlquiler.ERROR_VETAR_CLIENTE)
         }
     }
 }
