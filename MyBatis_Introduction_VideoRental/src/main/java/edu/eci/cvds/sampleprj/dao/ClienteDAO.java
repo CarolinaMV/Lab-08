@@ -1,8 +1,6 @@
 package edu.eci.cvds.sampleprj.dao;
 
 import edu.eci.cvds.samples.entities.Cliente;
-import edu.eci.cvds.samples.entities.Item;
-import org.apache.ibatis.exceptions.PersistenceException;
 
 import java.util.List;
 
