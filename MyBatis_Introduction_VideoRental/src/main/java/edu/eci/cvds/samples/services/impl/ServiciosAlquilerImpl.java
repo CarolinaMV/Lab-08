@@ -164,7 +164,7 @@ public class ServiciosAlquilerImpl implements ServiciosAlquiler {
     public void registrarItem(Item i) throws ExcepcionServiciosAlquiler {
         try {
             Item item = itemDAO.loadItem(i.getId());
-            if (item == null) itemDAO.saveItem();
+            if (item == null) itemDAO.saveItem(i);
             else throw new Exception();
         }catch (Exception e){
             throw new ExcepcionServiciosAlquiler(ExcepcionServiciosAlquiler.ERROR_REGISTRAR_ITEM);

@@ -55,11 +55,11 @@ public class MyBATISClienteDAO implements ClienteDAO {
     }
 
     @Override
-    public void vetarCliente(long doc, boolean estado) throws edu.eci.cvds.sampleprj.dao.PersistenceException {
+    public void vetarCliente(long doc, boolean estado) throws PersistenceException {
         try {
             ClienteMapper.vetarCliente(doc, estado);
         }catch (PersistenceException e){
-            throw new ExcepcionServiciosAlquiler(ExcepcionServiciosAlquiler.ERROR_VETAR_CLIENTE)
+            throw new PersistenceException(ExcepcionServiciosAlquiler.ERROR_VETAR_CLIENTE);
         }
     }
 }
