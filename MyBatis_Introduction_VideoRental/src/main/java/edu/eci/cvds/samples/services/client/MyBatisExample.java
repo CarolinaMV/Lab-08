@@ -21,6 +21,9 @@ package edu.eci.cvds.samples.services.client;
 import java.io.IOException;
 import java.io.InputStream;
 import java.sql.SQLException;
+
+import edu.eci.cvds.samples.services.ExcepcionServiciosAlquiler;
+import edu.eci.cvds.samples.services.ServiciosAlquilerFactory;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
@@ -58,24 +61,17 @@ public class MyBatisExample {
      * @throws SQLException 
      */
     public static void main(String args[]) throws SQLException {
-        SqlSessionFactory sessionfact = getSqlSessionFactory();
-
-        SqlSession sqlss = sessionfact.openSession();
-
-        
-        //Crear el mapper y usarlo: 
-        //ClienteMapper cm=sqlss.getMapper(ClienteMapper.class)
-        //cm...
-        
-        
-        
-        sqlss.commit();
-        
-        
-        sqlss.close();
-
-        
-        
+        //SqlSessionFactory sessionfact = getSqlSessionFactory();
+        //SqlSession sqlss = sessionfact.openSession();
+        //sqlss.commit();
+        //sqlss.close();
+        try {
+            System.out.print(ServiciosAlquilerFactory.getInstance().getServiciosAlquiler().consultarCliente(1));
+            System.out.print(ServiciosAlquilerFactory.getInstance().getServiciosAlquiler().consultarItem(20));
+            System.exit(0);
+        }catch (ExcepcionServiciosAlquiler e){
+            e.printStackTrace();
+        }
     }
 
 
