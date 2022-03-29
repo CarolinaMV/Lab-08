@@ -25,7 +25,7 @@ public class ServiciosAlquilerFactory {
     private Injector myBatisInjector(String env, String pathResource) {
         return createInjector(new XMLMyBatisModule() {
             @Override
-            protected void initialize() {
+            protected void initialize(){
                 setEnvironmentId(env);
                 setClassPathResource(pathResource);
                 bind(ItemDAO.class).to(MyBATISItemDAO.class);

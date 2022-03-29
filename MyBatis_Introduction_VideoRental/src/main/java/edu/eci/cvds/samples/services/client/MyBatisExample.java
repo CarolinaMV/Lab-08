@@ -58,7 +58,7 @@ public class MyBatisExample {
     /**
      * Programa principal de ejempo de uso de MyBATIS
      * @param args
-     * @throws SQLException 
+     * @throws SQLException
      */
     public static void main(String args[]) throws SQLException {
         //SqlSessionFactory sessionfact = getSqlSessionFactory();
@@ -66,7 +66,7 @@ public class MyBatisExample {
         //sqlss.commit();
         //sqlss.close();
         try {
-            System.out.print(ServiciosAlquilerFactory.getInstance().getServiciosAlquiler().consultarCliente(1));
+            //System.out.print(ServiciosAlquilerFactory.getInstance().getServiciosAlquiler().consultarCliente(4));
             System.out.print(ServiciosAlquilerFactory.getInstance().getServiciosAlquiler().consultarItem(20));
             System.exit(0);
         }catch (ExcepcionServiciosAlquiler e){
