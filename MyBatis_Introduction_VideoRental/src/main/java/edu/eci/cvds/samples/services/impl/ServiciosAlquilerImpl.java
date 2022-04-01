@@ -76,7 +76,7 @@ public class ServiciosAlquilerImpl implements ServiciosAlquiler {
             if (item == null) throw new ExcepcionServiciosAlquiler(ExcepcionServiciosAlquiler.ITEM_NO_REGISTRADO);
             else return item;
         } catch (PersistenceException ex) {
-            throw new ExcepcionServiciosAlquiler(ExcepcionServiciosAlquiler.ERROR_CONSULTAR_ITEM);
+            throw new ExcepcionServiciosAlquiler(ExcepcionServiciosAlquiler.ERROR_CONSULTAR_ITEM + id);
         }
     }
 

@@ -28,7 +28,6 @@ public class ServiciosAlquilerTest {
 		serviciosAlquiler = ServiciosAlquilerFactory.getInstance().getServiciosAlquilerTesting();
 	}
 
-
 	@Test
 	public void emptyDB() {
 		for(int i = 0; i < 100; i += 10) {
