@@ -1,0 +1,2178 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="11" failures="0" name="edu.eci.cvds.test.ServiciosAlquilerTest" time="0.143" errors="11" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="17+35-LTS-2724"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="user.country.format" value="419"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\nicol\CVDS\Lab-08\MyBatis_Introduction_VideoRental"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\nicol\CVDS\Lab-08\MyBatis_Introduction_VideoRental"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="17+35-LTS-2724"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\nicol\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\Git\cmd;C:\maven\bin;;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\PuTTY\;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Users\nicol\AppData\Local\Microsoft\WindowsApps;;C:\Users\nicol\AppData\Local\Programs\Microsoft VS Code\bin;."/>
+    <property name="maven.conf" value="C:\maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="library.jansi.path" value="C:\maven\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\nicol"/>
+    <property name="user.timezone" value="America/Bogota"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="user.name" value="nicol"/>
+    <property name="java.class.path" value="C:\maven\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language.format" value="es"/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.version" value="17"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-09-14"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="emptyDB" time="0.088">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaVetarCliente" time="0.016">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaRegistrarTipoItem" time="0.011">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaConsultarItems" time="0">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaRegistrarItem" time="0.009">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaNoRegistrarItem" time="0.011">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaRegistrarCliente" time="0.004">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaConsultarCliente" time="0.004">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaConsultarItem" time="0">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaActualizarTarifaItem" time="0">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+  <testcase classname="edu.eci.cvds.test.ServiciosAlquilerTest" name="deberiaNoConsultarItem" time="0">
+    <error message="Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+" type="com.google.inject.CreationException">com.google.inject.CreationException: Unable to create injector, see the following errors:
+
+1) [Guice/MissingImplementation]: No implementation for SqlSessionFactory was bound.
+
+Did you mean?
+    SqlSession bound at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:60)
+
+Requested by:
+1  : SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+      \_ for 1st parameter
+     at SqlSessionManagerProvider.createNewSqlSessionManager(SqlSessionManagerProvider.java:49)
+     at AbstractMyBatisModule.configure(AbstractMyBatisModule.java:59)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+2) [Guice/MissingImplementation]: No implementation for ClienteMapper was bound.
+
+Requested by:
+1  : MyBATISClienteDAO.clienteMapper(MyBATISClienteDAO.java:13)
+      \_ for field clienteMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:32)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+3) [Guice/MissingImplementation]: No implementation for ItemMapper was bound.
+
+Requested by:
+1  : MyBATISItemDAO.itemMapper(MyBATISItemDAO.java:12)
+      \_ for field itemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:31)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+4) [Guice/MissingImplementation]: No implementation for TipoItemMapper was bound.
+
+Requested by:
+1  : MyBATISTipoItemDAO.tipoItemMapper(MyBATISTipoItemDAO.java:12)
+      \_ for field tipoItemMapper
+     at ServiciosAlquilerFactory$1.initialize(ServiciosAlquilerFactory.java:33)
+
+Learn more:
+  https://github.com/google/guice/wiki/MISSING_IMPLEMENTATION
+
+5) Impossible to read classpath resource &apos;mybatis-config-h2.xml&apos;, see nested exceptions: 
+### Error building SqlSession.
+### The error may exist in mappers/ItemRentadoMapper.xml
+### The error occurred while processing mapper_resultMap[ItemResult]_association[tipo]
+### Cause: BuilderException: Error parsing SQL Mapper Configuration. Cause: IOException: Could not find resource mappers/ItemRentadoMapper.xml
+  at XMLMyBatisModule.internalConfigure(XMLMyBatisModule.java:114)
+
+5 errors
+
+======================
+Full classname legend:
+======================
+AbstractMyBatisModule:      &quot;org.mybatis.guice.AbstractMyBatisModule&quot;
+BuilderException:           &quot;org.apache.ibatis.builder.BuilderException&quot;
+ClienteMapper:              &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ClienteMapper&quot;
+IOException:                &quot;java.io.IOException&quot;
+ItemMapper:                 &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.ItemMapper&quot;
+MyBATISClienteDAO:          &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISClienteDAO&quot;
+MyBATISItemDAO:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISItemDAO&quot;
+MyBATISTipoItemDAO:         &quot;edu.eci.cvds.sampleprj.dao.mybatis.MyBATISTipoItemDAO&quot;
+ServiciosAlquilerFactory$1: &quot;edu.eci.cvds.samples.services.ServiciosAlquilerFactory$1&quot;
+SqlSession:                 &quot;org.apache.ibatis.session.SqlSession&quot;
+SqlSessionFactory:          &quot;org.apache.ibatis.session.SqlSessionFactory&quot;
+SqlSessionManagerProvider:  &quot;org.mybatis.guice.session.SqlSessionManagerProvider&quot;
+TipoItemMapper:             &quot;edu.eci.cvds.sampleprj.dao.mybatis.mappers.TipoItemMapper&quot;
+XMLMyBatisModule:           &quot;org.mybatis.guice.XMLMyBatisModule&quot;
+========================
+End of classname legend:
+========================
+
+	at com.google.inject.internal.Errors.throwCreationExceptionIfErrorsExist(Errors.java:568)
+	at com.google.inject.internal.InternalInjectorCreator.initializeStatically(InternalInjectorCreator.java:163)
+	at com.google.inject.internal.InternalInjectorCreator.build(InternalInjectorCreator.java:110)
+	at com.google.inject.Guice.createInjector(Guice.java:87)
+	at com.google.inject.Guice.createInjector(Guice.java:69)
+	at com.google.inject.Guice.createInjector(Guice.java:59)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.myBatisInjector(ServiciosAlquilerFactory.java:26)
+	at edu.eci.cvds.samples.services.ServiciosAlquilerFactory.getServiciosAlquilerTesting(ServiciosAlquilerFactory.java:54)
+	at edu.eci.cvds.test.ServiciosAlquilerTest.&lt;init&gt;(ServiciosAlquilerTest.java:28)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.junit.runners.BlockJUnit4ClassRunner.createTest(BlockJUnit4ClassRunner.java:195)
+	at org.junit.runners.BlockJUnit4ClassRunner$1.runReflectiveCall(BlockJUnit4ClassRunner.java:244)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.BlockJUnit4ClassRunner.methodBlock(BlockJUnit4ClassRunner.java:241)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:70)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:50)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:252)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:141)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:112)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:189)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:165)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+</error>
+  </testcase>
+</testsuite>

@@ -10,7 +10,6 @@
         VALUES (#{item.id}, #{item.nombre}, #{item.descripcion}, #{item.fechaLanzamiento},#{item.tarifaxDia},#{item.formatoRenta},#{item.genero}, #{item.tipo.id})
     </insert>
 
-
     <select parameterType="map" id="consultarItems" resultMap="ItemResult">
         select
         i.id as id,
@@ -23,12 +22,6 @@
         FROM VI_ITEMS as i
         left join VI_TIPOITEM as ti on i.TIPOITEM_id=ti.id
     </select>
-
-
-    <insert parameterType="map" id="insertarItem" >
-        INSERT INTO VI_ITEMS(id, nombre, descripcion, fechalanzamiento, tarifaxdia, formatorenta, genero, TIPOITEM_id)
-        VALUES (#{item.id}, #{item.nombre}, #{item.descripcion}, #{item.fechaLanzamiento},#{item.tarifaxDia},#{item.formatoRenta},#{item.genero}, #{item.tipo.id})
-    </insert>
 
     <resultMap type='Item' id='ItemResult'>
         <id property='id' column='id'/>

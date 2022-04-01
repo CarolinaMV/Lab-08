@@ -13,12 +13,12 @@ import java.util.List;
 public class MyBATISClienteDAO implements ClienteDAO {
 
     @Inject
-    private ClienteMapper ClienteMapper;
+    private ClienteMapper clienteMapper;
 
     @Override
     public void saveCliente(Cliente c) throws PersistenceException {
         try{
-            ClienteMapper.registrarCliente(c);
+            clienteMapper.registrarCliente(c);
         }
         catch(Exception e){
             throw new PersistenceException(ExcepcionServiciosAlquiler.ERROR_REGISTRAR_CLIENTE);
@@ -28,7 +28,7 @@ public class MyBATISClienteDAO implements ClienteDAO {
     @Override
     public Cliente loadCliente(int id) throws PersistenceException {
         try{
-            return ClienteMapper.consultarCliente(id);
+            return clienteMapper.consultarCliente(id);
         }
         catch(Exception e){
             throw new PersistenceException(ExcepcionServiciosAlquiler.ERROR_CONSULTAR_CLIENTE);
@@ -38,7 +38,7 @@ public class MyBATISClienteDAO implements ClienteDAO {
     @Override
     public List<Cliente> loadClientes() throws PersistenceException {
         try{
-            return ClienteMapper.consultarClientes();
+            return clienteMapper.consultarClientes();
         }
         catch(Exception e){
             throw new PersistenceException(ExcepcionServiciosAlquiler.ERROR_CONSULTAR_CLIENTES);
@@ -48,7 +48,7 @@ public class MyBATISClienteDAO implements ClienteDAO {
     @Override
     public void saveItemRentado(int id, int idi, Date fechaInicio, Date fechaFin) throws PersistenceException{
         try {
-            ClienteMapper.agregarItemRentadoACliente(id, idi, fechaInicio, fechaFin);
+            clienteMapper.agregarItemRentadoACliente(id, idi, fechaInicio, fechaFin);
         }catch (Exception e){
             throw new PersistenceException(ExcepcionServiciosAlquiler.ERROR_REGISTRAR_ITEMRENTADO);
         }
@@ -57,7 +57,7 @@ public class MyBATISClienteDAO implements ClienteDAO {
     @Override
     public void vetarCliente(long doc, boolean estado) throws PersistenceException {
         try {
-            ClienteMapper.vetarCliente(doc, estado);
+            clienteMapper.vetarCliente(doc, estado);
         }catch (PersistenceException e){
             throw new PersistenceException(ExcepcionServiciosAlquiler.ERROR_VETAR_CLIENTE);
         }
